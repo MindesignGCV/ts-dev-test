@@ -1,0 +1,50 @@
+{
+  "name": "ts-dev-test",
+  "version": "1.0.0",
+  "description": "Test for typescript developer",
+  "main": "dist/src/cli.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node src/cli.ts $@",
+    "format": "prettier --write '{src,test}/**/*.{ts,json,md}'",
+    "lint": "eslint \"{src,test}/**/*.ts\" --format=compact --fix",
+    "test": "node --loader ts-node/esm --experimental-specifier-resolution=node test/main.ts $@"
+  },
+  "bin": {
+    "exclude-subnet": "./bin/exclude-subnet.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MindesignGCV/ts-dev-test.git"
+  },
+  "keywords": [
+    "test",
+    "interview",
+    "ts"
+  ],
+  "author": "Elbek Azimov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MindesignGCV/ts-dev-test/issues"
+  },
+  "homepage": "https://github.com/MindesignGCV/ts-dev-test#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-functional": "^4.0.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.2"
+  },
+  "type": "module",
+  "files": [
+    "bin",
+    "dist"
+  ]
+}
