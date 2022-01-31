@@ -27,8 +27,9 @@
 
 - Tasks related with each-other, so please do them step by step.
 - When you done with some task, check if `eslint` is happy by running `npm run lint`.
-- Don't use external libraries.
-- It is not required to do all tasks, you can stop in any point and send results.
+- It is not required to do all tasks, you can stop in any point and send results - it is fine.
+- You can use any libraries, we recommend `fp-ts`, `effect-ts` and `parser-ts`.
+- The weight of libraries is not critical for these tasks.
 - On every task, there are one or more in-completed functions.
   In-completed functions has `hole()`, your task is to implement appropriate logic instead of `hole()`.
 
