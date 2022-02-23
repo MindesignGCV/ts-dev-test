@@ -25,6 +25,7 @@
 
 #### rules
 
+- Tasks initially were written for typescript, but feel free to use *any language*.
 - Tasks related with each-other, so please do them step by step.
 - When you done with some task, check if `eslint` is happy by running `npm run lint`.
 - It is not required to do all tasks, you can stop in any point and send results - it is fine.
